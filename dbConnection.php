@@ -38,17 +38,62 @@ echo"</td>";
 echo"</tr>";
 
 echo"<tr>";
-echo"<td><span id='span1' class='radOptions' style='color:green;'><b> The Correct Answer Is: ".$row['Corrans']; "</b></span></td>";
+echo"<td><span id='span1' class='radoptions' style='color:green; display:none;'><hr/><b> The Correct Answer Is: ".$row['Corrans']; "</b><hr/></span></td>";
 echo"</tr>";
 
 
     }
     echo"</table>";
 }
-echo"</center>";
+// echo"</center>";
 
 mysqli_close($conn);
 ?>
 
+<button onclick="myFunction()">Click me</button>
 
-<button id="but1" type="button">Submit</button>
+<p id="demo"></p>
+
+<button id="but1" type="button" onclick="displayans()">Submit</button>
+<label id="Labmsg"></label>
+
+
+<!-- jquery cdn -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- jquery cdn -->
+<script>
+
+
+    $(document).ready(function)(){
+        $("#but1").click(function(){
+            $(".radoptions").show();
+            $(".radoptions").attr("disabled", true);
+            $("#but1").attr("disabled", true);
+
+
+
+
+        })
+    }
+
+        function displayans() {
+            alert("It worked")
+            // document.getElementById("Labmsg").innerHTML="";
+            // var results = document.getElemetsByTagName('input');
+            // for(i=0; i<results.lenght; i++){
+            //     if(results[i].type=="radio"){
+            //         if(results[i].checked){
+            //             document.getElementById("Labmsg").innerHTML +="Q"+results[i].name+""+"Your Selected Answer is : "+results[i].value +"<br/>";
+
+            //         }
+            //     }
+            // }
+        }
+
+
+
+        function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+</script>
