@@ -25,11 +25,11 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
+      <a class="navbar-item" href="index.php">
         Home
       </a>
 
-      <a class="navbar-item">
+      <a class="navbar-item" href="./Admin/ui.php">
         Admin
       </a>
 
