@@ -1,0 +1,25 @@
+.nav_img {
+    /*background-color: rgb(255, 81, 0);
+    *//*height: 80px;
+    *//*width: 90px;
+    */transform: scale(1.8);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+
+
+.text_cent {
+    /* background-color: red; */
+    /* box-align:center; */
+    padding-left:150px;
+    padding-right:120px;
+
+}
